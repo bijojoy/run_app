@@ -1,0 +1,5 @@
+---
+# vars file for run_app
+app_user: "app-user"
+app_folder: "/webapps/devops"
+app_name: "app"

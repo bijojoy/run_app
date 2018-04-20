@@ -1,0 +1,12 @@
+---
+# tasks file for run_app
+# - name: Run Flask App using Python Script (Basic)
+#   become_user: "{{ app_user }}"
+#   command: python app.py
+#   args:
+#     chdir: "{{ app_folder }}/devops-challenge"
+
+- name: Run Flask App using supervisors
+  supervisorctl:
+    name: "{{ app_name }}"
+    state: started
